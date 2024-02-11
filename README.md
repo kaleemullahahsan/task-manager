@@ -17,5 +17,4 @@ To run the application locally, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/taskhub.git
-cd taskhub
+git clone https://github.com/kaleemullahahsan/task-manager
