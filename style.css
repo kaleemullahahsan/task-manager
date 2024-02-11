@@ -1,0 +1,181 @@
+        body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: #1a1a1a  ;
+    margin: 0;
+}
+
+.input-container {
+    margin-top: 15px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: calc(100% - 16px);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input:focus {
+  outline: 1.5px solid #122ac58a;
+}
+
+button {
+    padding: 8px;
+    background-color: #344adb;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #122ac58a;
+}
+
+.task-container {
+    margin-top: 15px;
+}
+
+.task {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.task:hover {
+    transform: translateY(-3px);
+}
+
+.task-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: background-color 0.3s ease;
+}
+
+.slider:before {
+    position: absolute;
+    content: '';
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+input:checked + .slider {
+    background-color: #1a1a1a;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.dark-mode-container {
+    background-color: #122ac5; /* Change this to your desired dark mode container background color */
+    color: #fff; /* Change this to your desired text color in dark mode */
+}
+
+/* Update the styles for dark mode */
+.dark-mode {
+    background-color: #1a1a1a; /* Change this to your desired overall dark mode background color */
+    color: #fff; /* Change this to your desired text color in dark mode */
+}
+
+.header, .task, .input-container {
+    background-color: #ffffff00;
+    color: #5F6769;
+}
+
+#add-task {
+    background-color: #344adb;
+    color: #ccc;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#add-task:hover {
+    background-color: #1a1a1a;
+}
+
+#task-title, #task-description {
+    background-color: #ecf0f1;
+    color: #333;
+}
+
+#task-container .task.completed {
+    background-color: #008eff26;
+}
+
+#task-container .task.completed:hover {
+    transform: translateY(-3px);
+}
+span{
+    margin-left: 5px;
+    color: #ccc;
+}
