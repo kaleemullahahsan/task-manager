@@ -17,4 +17,4 @@ To run the application locally, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/kaleemullahahsan/task-manager
+ https://github.com/kaleemullahahsan/task-manager](https://github.com/kaleemullahahsan/task-manager.git)https://github.com/kaleemullahahsan/task-manager.git
